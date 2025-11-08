@@ -27,7 +27,7 @@
                      </div>
 
                      <div class="flex items-center gap-10">
-                        <div class="flex items-center gap-3 bg-blue-100 rounded-md p-1">
+                        <div class="flex items-center gap-3 bg-blue-100 rounded-full p-2">
                             <input class="big-checkbox"  type="checkbox" name="" id="">
                             <h1 id="increase-count" class="text-2xl font-bold">23</h1>
                         </div>
@@ -87,7 +87,7 @@
                 <!-- Card -1 -->
                  <div class="bg-sky-100 px-6 pt-6 pb-4 rounded-lg">
                     <button class="btn bg-white rounded-lg text-xs font-medium ">ShopEase</button>
-                    <h1 class="font-medium text-xl my-4 ">Fix Mobile Button Issue </h1>
+                    <h1 class="title-details font-medium text-xl my-4 ">Fix Mobile Button Issue </h1>
                     <div class="bg-white rounded-lg mb-4 p-4 overflow-y-auto overflow-x-hidden h-24">
                         <p class="text-base font-normal opacity-60">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
@@ -105,7 +105,7 @@ and ensure onClick works properly</p>
                 <!-- Card - 2 -->
                  <div class="bg-sky-100 px-6 pt-6 pb-4 rounded-lg">
                     <button class="btn bg-white rounded-lg text-xs font-medium ">CloudSync</button>
-                    <h1 class="font-medium text-xl my-4 ">Add Dark Mode </h1>
+                    <h1 class="title-details font-medium text-xl my-4 ">Add Dark Mode </h1>
                     <div class="bg-white rounded-lg mb-4 p-4 overflow-y-auto overflow-x-hidden h-24">
                         <p class="text-base font-normal opacity-60">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     </div>
@@ -122,7 +122,7 @@ and ensure onClick works properly</p>
                 <!-- Card - 3 -->
                  <div class="bg-sky-100 px-6 pt-6 pb-4 rounded-lg">
                     <button class="btn bg-white rounded-lg text-xs font-medium ">SwiftPay</button>
-                    <h1 class="font-medium text-xl my-4 ">Optimize  Home page  </h1>
+                    <h1 class="title-details font-medium text-xl my-4 ">Optimize  Home page  </h1>
                     <div class="bg-white rounded-lg mb-4 p-4 overflow-y-auto overflow-x-hidden h-24">
                         <p class="text-base font-normal opacity-60">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     </div>
@@ -139,7 +139,7 @@ and ensure onClick works properly</p>
                 <!-- Card - 4 -->
                  <div class="bg-sky-100 px-6 pt-6 pb-4 rounded-lg">
                     <button class="btn bg-white rounded-lg text-xs font-medium ">SwiftPay</button>
-                    <h1 class="font-medium text-xl my-4 ">Optimize  Home page  </h1>
+                    <h1 class="title-details font-medium text-xl my-4 ">Optimize  Home page  </h1>
                     <div class="bg-white rounded-lg mb-4 p-4 overflow-y-auto overflow-x-hidden h-24">
                         <p class="text-base font-normal opacity-60">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
@@ -157,7 +157,7 @@ and ensure onClick works properly</p>
                 <!-- Card - 5 -->
                  <div class="bg-sky-100 px-6 pt-6 pb-4 rounded-lg">
                     <button class="btn bg-white rounded-lg text-xs font-medium ">Meta</button>
-                    <h1 class="font-medium text-xl my-4 ">Add new emoji 🤲 </h1>
+                    <h1 class="title-details font-medium text-xl my-4 ">Add new emoji 🤲 </h1>
                     <div class="bg-white rounded-lg mb-4 p-4 overflow-y-auto overflow-x-hidden h-24">
                         <p class="text-base font-normal opacity-60  ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
@@ -175,7 +175,7 @@ and ensure onClick works properly</p>
                 <!-- Card - 6 -->
                  <div class="bg-sky-100 px-6 pt-6 pb-4 rounded-lg">
                     <button class="btn bg-white rounded-lg text-xs font-medium ">Google LLC</button>
-                    <h1 class="font-medium text-xl my-4 ">Integrate OpenAI API  </h1>
+                    <h1 class="title-details font-medium text-xl my-4 ">Integrate OpenAI API  </h1>
                     <div class="bg-white rounded-lg mb-4 p-4 overflow-y-auto overflow-x-hidden h-24">
                         <p class="text-base font-normal opacity-60">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly</p>
@@ -203,10 +203,17 @@ and ensure onClick works properly</p>
                 <img src="assets/activity.png" alt="Activity log">
                 <h3>Activity Log</h3>
             </div>
-            <button class="btn btn-soft btn-primary">Clear History</button>
+            <button id="clear-history" class="btn btn-soft btn-primary">Clear History</button>
             <br>
             <br>
              <hr class="border-dotted">
+
+             <!-- Monitor the Activity log here -->
+
+             <div id="monitor-log">
+
+             </div>
+
          </section>
 
         </section>
