@@ -1,0 +1,9 @@
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.big-checkbox {
+  transform: scale(1.5); /* Increase size (1 = normal) */
+  accent-color: #3752FD; /* Optional: change color (modern browsers) */
+  cursor: pointer;
+}

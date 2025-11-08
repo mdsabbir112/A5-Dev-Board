@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <!-- Daisy UI CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- Font Style CDN -->
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="poppins bg-sky-100 ">
+    <header>
+        <nav class="pt-6 pb-5">
+            <!-- Navigation content will go here -->
+             <div class="bg-white max-w-screen-xl mx-auto h-24 p-5  rounded-2xl flex justify-between items-center">
+                    <!-- get 2 div element  -->
+                     <div class="flex items-center gap-3">
+                        <img src="assets/logo.png" alt="Logo">
+                        <h1 class="text-4xl ">Dev<span class="font-bold text-black">Board</span></h1>
+                     </div>
+
+                     <div class="flex items-center gap-10">
+                        <div class="flex items-center gap-3 bg-blue-100 rounded-md p-1">
+                            <input class="big-checkbox"  type="checkbox" name="" id="">
+                            <h1 class="text-2xl font-bold">23</h1>
+                        </div>
+                        <div>
+                            <button><img id="random-bg" src="assets/theme-btn.png" alt="Theme Button"></button>
+                        </div>
+                     </div>
+             </div>
+        </nav>
+        
+    </header>
+    
+    <!-- Main Section -->
+     <main>
+        <section class="flex  gap-6 max-w-screen-xl mx-auto">
+        <!-- First Card Section -->
+        <section class="flex-3">
+             <div class="bg-white max-w-4xl mx-auto h-36 p-5  rounded-2xl flex gap-6 items-center justify-between pt-6">
+                <!-- first Card Container  -->
+                 <div class="flex-1">
+                    <div class="flex items-center gap-5  bg-sky-100 rounded-xl p-7 ">
+                    <input class="big-checkbox"  type="checkbox" name="" id="">
+                    <div>
+                        <h3>Task Assigned</h3>
+                        <h1 class="text-2xl font-bold">05</h1>
+                    </div>
+                 </div>
+                 </div>
+
+                 <!-- Secound Card section -->
+                  <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]  rounded-xl flex-2">
+                    <div class="flex items-center  pt-5 py-4 pl-10 pr-20 gap-6  p-7">
+                         <img class="" src="assets/board.png" alt="Board Image">
+                    <h1 class="text-white w-9/12 text-2xl font-medium">Discover Something New Today!</h1>
+                    </div>    
+                </div>
+
+                <!-- Third Card Section -->
+                 <div class="flex-1">
+                   <div class="flex items-center gap-5  bg-sky-100 rounded-xl p-7">
+                    <img src="assets/calender.png" alt="Calender">
+                    <div>
+                        <h3>Wed</h3>
+                        <h1 class="text-2xl font-bold">July 28 2025</h1>
+                    </div>
+                 </div>
+                 </div>
+             </div>
+
+             <!-- Secound 6 Card section are from there  -->
+
+             <div class="bg-white">
+                <!-- Card -1 -->
+                 <div class="bg-sky-100">
+                    <button>Shop Ease</button>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <div class="bg-white rounded-2xl">
+                        <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly</p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <h3>Deadline</h3>
+                            <h1>21 March 2025</h1>
+                        </div>
+                        <button class="btn btn-secondary">Completed</button>
+                    </div>
+                 </div>
+             </div>
+
+        </section>
+
+        <!-- Activity Log -->
+         <section class="flex-1 bg-white h-96 rounded-2xl text-center">
+            <div class="flex items-center gap-4 justify-center mt-6 mb-4">
+                <img src="assets/activity.png" alt="Activity log">
+                <h3>Activity Log</h3>
+            </div>
+            <button class="btn btn-soft btn-primary">Clear History</button>
+            <br>
+            <br>
+             <hr class="border-dotted">
+         </section>
+
+        </section>
+     </main>
+
+     <!-- Footer Section -->
+      <footer>
+        <!-- <p>© 2025 Dev Board. All rights reserved.</p> -->
+      </footer>
+
+
+    <!-- Script  -->
+     <script src="JS/Main.js"></script>
+     <script src="JS/RandomBg.js"></script>
+</body>
+</html>
+
