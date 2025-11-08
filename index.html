@@ -8,10 +8,10 @@
 
     <!-- Daisy UI CDN -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<!-- Font Style CDN -->
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+     <!-- Font Style CDN -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 
 </head>
@@ -29,7 +29,7 @@
                      <div class="flex items-center gap-10">
                         <div class="flex items-center gap-3 bg-blue-100 rounded-md p-1">
                             <input class="big-checkbox"  type="checkbox" name="" id="">
-                            <h1 class="text-2xl font-bold">23</h1>
+                            <h1 id="increase-count" class="text-2xl font-bold">23</h1>
                         </div>
                         <div>
                             <button><img id="random-bg" src="assets/theme-btn.png" alt="Theme Button"></button>
@@ -54,13 +54,13 @@
                     <input class="big-checkbox"  type="checkbox" name="" id="">
                     <div>
                         <h3 class="text-sm">Task Assigned</h3>
-                        <h1 class="text-xl font-bold">05</h1>
+                        <h1 id="digit-count" class="text-xl font-bold">06</h1>
                     </div>
                  </div>
                  </div>
 
                  <!-- Second Card section -->
-                  <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]  rounded-xl flex-2">
+                  <div id="Discover-card-section" class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]  rounded-xl flex-2">
                     <div class="flex items-center  pt-5 py-4 pl-10 pr-12 gap-6  p-7">
                          <img class="" src="assets/board.png" alt="Board Image">
                     <h1 class="text-white text-xl font-medium">Discover Something New Today!</h1>
@@ -98,7 +98,7 @@ and ensure onClick works properly</p>
                             <h3 class="font-normal text-sm ">Deadline</h3>
                             <h1 class="font-medium text-base ">21 March 2025</h1>
                         </div>
-                        <button class="btn bg-blue-500 text-white rounded-lg">Completed</button>
+                        <button id="complete-btn" class="complete-btn btn bg-blue-500 text-white rounded-lg">Completed</button>
                     </div>
                  </div>
 
@@ -115,7 +115,7 @@ and ensure onClick works properly</p>
                             <h3 class="font-normal text-sm ">Deadline</h3>
                             <h1 class="font-medium text-base ">21 March 2025</h1>
                         </div>
-                        <button class="btn bg-blue-500 text-white rounded-lg">Completed</button>
+                        <button id="complete-btn" class="complete-btn  btn bg-blue-500 text-white rounded-lg">Completed</button>
                     </div>
                  </div>
 
@@ -132,7 +132,7 @@ and ensure onClick works properly</p>
                             <h3 class="font-normal text-sm ">Deadline</h3>
                             <h1 class="font-medium text-base ">21 March 2025</h1>
                         </div>
-                        <button class="btn bg-blue-500 text-white rounded-lg">Completed</button>
+                        <button id="complete-btn1" class="complete-btn  btn bg-blue-500 text-white rounded-lg">Completed</button>
                     </div>
                  </div>
 
@@ -150,7 +150,7 @@ and ensure onClick works properly</p>
                             <h3 class="font-normal text-sm ">Deadline</h3>
                             <h1 class="font-medium text-base ">21 March 2025</h1>
                         </div>
-                        <button class="btn bg-blue-500 text-white rounded-lg">Completed</button>
+                        <button class="complete-btn   btn bg-blue-500 text-white rounded-lg">Completed</button>
                     </div>
                  </div>
 
@@ -168,7 +168,7 @@ and ensure onClick works properly</p>
                             <h3 class="font-normal text-sm ">Deadline</h3>
                             <h1 class="font-medium text-base ">21 March 2025</h1>
                         </div>
-                        <button class="btn bg-blue-500 text-white rounded-lg">Completed</button>
+                        <button class="complete-btn  btn bg-blue-500 text-white rounded-lg">Completed</button>
                     </div>
                  </div>
 
@@ -186,7 +186,7 @@ and ensure onClick works properly</p>
                             <h3 class="font-normal text-sm ">Deadline</h3>
                             <h1 class="font-medium text-base ">21 March 2025</h1>
                         </div>
-                        <button class="btn bg-blue-500 text-white rounded-lg">Completed</button>
+                        <button class="complete-btn  btn bg-blue-500 text-white rounded-lg">Completed</button>
                     </div>
                  </div>
 
@@ -221,6 +221,8 @@ and ensure onClick works properly</p>
     <!-- Script  -->
      <script src="JS/Main.js"></script>
      <script src="JS/RandomBg.js"></script>
+     <script src="JS/Discover.js"></script>
+     <script src="JS/Complete.js"></script>
 </body>
 </html>
 
