@@ -49,7 +49,7 @@ for(let result of Complete){
                 // console.log(title);
                 majorTitle = title.innerText ;
                let index =  majorTitle.indexOf(title);
-               console.log(index);
+            //    console.log(index);
                 // console.log(majorTitle);
                 // break;
         }
