@@ -7,3 +7,14 @@
   accent-color: #3752FD; /* Optional: change color (modern browsers) */
   cursor: pointer;
 }
+
+.design-log {
+    border : 2px solid skyblue;
+    box-shadow: 4px 4px 10px gray;
+    /* background-color: rgba(151,204,4,5); */
+    /* background-color: gray; */
+    /* margin-bottom: 8px; */
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -15,8 +15,7 @@ let Complete = document.getElementsByClassName('complete-btn');
     // For count the iteration and alert the congratulations message 
     let count = 0;
 
-    let titles = document.getElementsByClassName('title-details');
-    let majorTitle = '';
+// Loop for find Out the all button into this section .
 
 for(let result of Complete){
     result.addEventListener('click', function() {
@@ -31,34 +30,30 @@ for(let result of Complete){
         intIncreaseCount = intIncreaseCount + 1;
         increaseCount.innerText = intIncreaseCount ;
 
-        // This is for Button Disable
+        // This is for Button Disable and make it blur after click the complete button
         result.disabled = true;
+        result.style.opacity = '0.5';
+        result.style.cursor = 'none';
 
 
         // Monitor the Activity log Here and show the transaction message 
 
-                // Get the Time First 
+        // Get the Time First 
         let now = new Date() ;
-        let time = now.toLocaleTimeString();
+        let time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
-        // Extract all the title from the html Code 
-
-
-        
-        for(let title of titles ){
-                // console.log(title);
-                majorTitle = title.innerText ;
-               let index =  majorTitle.indexOf(title);
-            //    console.log(index);
-                // console.log(majorTitle);
-                // break;
-        }
+    // Extract all the title from the html Code
+    let parentCard = result.closest('div .bg-sky-100')
+    let getTitle = parentCard.querySelector('.title-details');
+    let majorTitle = getTitle.innerText;
 
         // Main Logic Implemented there 
 
         let monitorDetails = document.getElementById('monitor-log');
         // console.log(monitorDetails);
         let enterElement = document.createElement('p');
+        enterElement.classList.add('design-log');
+        console.log(enterElement);
         enterElement.innerText = `You Have Completed the task ${majorTitle} issued at ${time} `
         monitorDetails.appendChild(enterElement);
 
